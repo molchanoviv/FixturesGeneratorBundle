@@ -1,0 +1,28 @@
+{
+    "name": "opensoft/fixtures-generator-bundle",
+    "description": "Fixtures Generator Bundle",
+    "type": "symfony-bundle",
+    "keywords": ["symfony", "doctrine", "fixtures", "alice"],
+    "license": "MIT",
+    "homepage": "https://github.com/molchanoviv/FixturesGeneratorBundle",
+    "authors": [
+        {
+            "name": "Ivan Molchanov",
+            "homepage": "https://connect.sensiolabs.com/profile/molchanoviv"
+        }
+    ],
+    "autoload": {
+        "psr-0": { "Opensoft\\FixturesGeneratorBundle": "" }
+    },
+    "target-dir": "Opensoft/FixturesGeneratorBundle",
+    "require":{
+        "php":">=5.3.3",
+        "symfony/framework-bundle": "2.*",
+        "symfony/console": "2.*",
+        "doctrine/orm": ">=2.2.3,<2.5-dev",
+        "doctrine/data-fixtures": "1.0.*@dev",
+        "doctrine/doctrine-fixtures-bundle": "2.1.*@dev",
+        "symfony/yaml": "2.*",
+        "nelmio/alice": "*"
+    }
+}

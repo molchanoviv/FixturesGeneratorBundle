@@ -1,0 +1,12 @@
+services:
+  opensoft.fixtures_generator.driver.annotation:
+    class: Opensoft\FixturesGeneratorBundle\Driver\AnnotationDriver
+    arguments:
+      - @doctrine
+      - @annotation_reader
+  opensoft.fixtures_generator:
+    class: Opensoft\FixturesGeneratorBundle\Generator\Generator
+    arguments:
+      - @opensoft.fixtures_generator.driver.annotation
+      - @doctrine.orm.entity_manager
+      - %fixtures_generator.directory%
